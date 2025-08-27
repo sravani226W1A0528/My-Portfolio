@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sravani Kolagana - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            padding: 80px 20px;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: white;
+            flex-wrap: wrap;
+        }
+        .hero-text {
+            flex: 1;
+        }
+        .hero-text h1 {
+            font-size: 2.8rem;
+        }
+        .hero-text p {
+            font-size: 1.2rem;
+            margin: 10px 0 20px;
+        }
+        .hero-text a {
+            display: inline-block;
+            margin: 5px 10px;
+            padding: 10px 20px;
+            background-color: white;
+            color: #4facfe;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .hero-text a:hover {
+            background-color: #00f2fe;
+            color: white;
+        }
+        .hero-img {
+            flex: 1;
+            text-align: center;
+        }
+        .hero-img img {
+            width: 200px;
+            height: auto;
+            border-radius: 20px;
+            object-fit: cover;
+            border: 4px solid white;
+            border-radius: 10px solid black;
+            box-shadow: 10px solid black;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 60px 20px;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: #4facfe;
+        }
+
+        /* About */
+        .about p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 1.1rem;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .skill {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 220px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .skill h3 {
+            margin-bottom: 10px;
+            color: #00f2fe;
+        }
+
+        /* Projects */
+        .projects-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .project-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            flex: 1 1 280px;
+            max-width: 320px;
+        }
+        .project-card h3 {
+            margin-bottom: 10px;
+            color: #4facfe;
+        }
+        .project-card p {
+            font-size: 0.95rem;
+        }
+
+        /* Education & Achievements */
+        .list-item {
+            background-color: white;
+            padding: 15px 20px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+        }
+        .contact a {
+            display: inline-block;
+            margin: 5px 10px;
+            padding: 10px 20px;
+            background-color: #4facfe;
+            color: white;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .contact a:hover {
+            background-color: #00f2fe;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px){
+            .hero {
+                flex-direction: column;
+            }
+            .hero-img img {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Sravani Kolagana</h1>
+            <p>Salesforce Developer | Python & Web Developer | Data Enthusiast</p>
+            <a href="https://github.com/">GitHub</a>
+            <a href="https://linkedin.com/">LinkedIn</a>
+            <a href="mailto:your.email@example.com">Email</a>
+        </div>
+        <div class="hero-img">
+            <img src="images/my half photo.jpg"alt="Sravani Kolagana">
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="about container">
+        <h2>About Me</h2>
+        <p>
+            I’m a tech enthusiast passionate about Salesforce development, building interactive dashboards in Power BI, and creating dynamic web applications. 
+            I enjoy turning ideas into solutions that make workflows smarter and data more actionable.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills container">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <h3>Salesforce</h3>
+                <p>Apex, LWC, Visualforce, Flows, Schema Design</p>
+            </div>
+            <div class="skill">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="skill">
+                <h3>Data & BI</h3>
+                <p>SQL, Power BI, Data Modeling</p>
+            </div>
+            <div class="skill">
+                <h3>Programming</h3>
+                <p>Python (Data Structures, Algorithms, Automation)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects container">
+        <h2>Projects</h2>
+        <div class="projects-flex">
+            <div class="project-card">
+                <h3>Employee Management System (Salesforce)</h3>
+                <p>Built using Custom Objects, Apex, LWC, and Flows. Features: Leave request system, approval processes, user role-based access, and batch automation.</p>
+            </div>
+            <div class="project-card">
+                <h3>E-Commerce Website</h3>
+                <p>Designed a responsive front-end interface with HTML, CSS, and JavaScript. Implemented interactive product listings, cart management, and checkout process.</p>
+            </div>
+            <div class="project-card">
+                <h3>Power BI Dashboard – Sales Analytics</h3>
+                <p>Visualized key sales metrics using interactive charts and slicers. Connected multiple data sources for real-time insights.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="education container">
+        <h2>Education</h2>
+        <div class="list-item">
+            <strong>Bachelor’s Degree in Computer Science</strong> – XYZ University (2020-2024) | CGPA: 8.5
+        </div>
+        <div class="list-item">
+            Intermediate (2020-2022) – State Board | CGPA: 9.0
+        </div>
+        <div class="list-item">
+            High School (2018-2020) – State Board | CGPA: 9.2
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="achievements container">
+        <h2>Achievements & Certifications</h2>
+        <div class="list-item">Salesforce Platform Developer I Certification</div>
+        <div class="list-item">Power BI Desktop Certified</div>
+        <div class="list-item">Python Programming Course Completion</div>
+        <div class="list-item">Hackathon Winner – XYZ Hackathon 2023</div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact container">
+        <h2>Contact Me</h2>
+        <a href="https://github.com/">GitHub</a>
+        <a href="https://linkedin.com/">LinkedIn</a>
+        <a href="mailto:your.email@example.com">Email</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Sravani Kolagana. All rights reserved.
+    </footer>
+
+</body>
+</html>
